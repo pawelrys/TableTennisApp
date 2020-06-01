@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".setMatchPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/matchFirstNameText"
+            android:layout_width="180dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/nameFirst"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toStartOf="@+id/matchFirstSurnameText"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/matchFirstSurnameText" />
+
+        <EditText
+            android:id="@+id/matchFirstSurnameText"
+            android:layout_width="180dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/surnameFirst"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/matchFirstNameText"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/matchSecondNameText"
+            android:layout_width="180dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="140dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/nameSecond"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toStartOf="@+id/matchSecondSurnameText"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/matchSecondSurnameText" />
+
+        <EditText
+            android:id="@+id/matchSecondSurnameText"
+            android:layout_width="180dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="140dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/surnameSecond"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/matchSecondNameText"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/matchSetFirstText"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="240dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/setFirst"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toStartOf="@+id/matchSetSecondText"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="230dp" />
+
+        <EditText
+            android:id="@+id/matchSetSecondText"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="240dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/setSecond"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toStartOf="@+id/matchSetThirdText"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/matchSetFirstText"
+            app:layout_constraintTop_toTopOf="@+id/matchSetFirstText" />
+
+        <EditText
+            android:id="@+id/matchSetThirdText"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="240dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/setThird"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/matchSetSecondText"
+            app:layout_constraintTop_toTopOf="@+id/matchSetSecondText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/matchSetFourthText"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="300dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/setFourth"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toStartOf="@+id/matchSetFifthText"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="290dp" />
+
+        <EditText
+            android:id="@+id/matchSetFifthText"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="300dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/setFifth"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/matchSetFourthText"
+            app:layout_constraintTop_toTopOf="@+id/matchSetFourthText" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/enterMatchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="80dp"
+        android:padding="30dp"
+        android:text="@string/enterMatchButton"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+

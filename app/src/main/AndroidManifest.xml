@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="IO.IO_project">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:icon="@mipmap/tabletennis"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/tabletennis_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup">
+        <activity
+            android:name=".sortTableInTournamentPage"
+            android:parentActivityName=".mainRefereeInterfacePage" />
+        <activity
+            android:name=".choosePersonPage"
+            android:parentActivityName=".Main" />
+        <activity
+            android:name=".randomPlayerPage"
+            android:parentActivityName=".mainRefereeInterfacePage" />
+        <activity
+            android:name=".spacePlayerPage"
+            android:parentActivityName=".mainRefereeInterfacePage" />
+        <activity
+            android:name=".sortTablePage"
+            android:parentActivityName=".mainRefereeInterfacePage" />
+        <activity
+            android:name=".addPlayerToTournamentPage"
+            android:parentActivityName=".mainRefereeInterfacePage" />
+        <activity
+            android:name=".searchPlayerPage"
+            android:parentActivityName=".mainRefereeInterfacePage" />
+        <activity
+            android:name=".addPlayerPage"
+            android:parentActivityName=".mainRefereeInterfacePage" />
+        <activity
+            android:name=".setMatchPage"
+            android:parentActivityName=".choosePersonPage" />
+        <activity
+            android:name=".classificationPage"
+            android:parentActivityName=".choosePersonPage" />
+        <activity
+            android:name=".tournamentLadderPage"
+            android:parentActivityName=".choosePersonPage" />
+        <activity
+            android:name=".mainRefereeInterfacePage"
+            android:parentActivityName=".refereeLoginPage" />
+        <activity
+            android:name=".countingRefereeInterfacePage"
+            android:parentActivityName=".refereeLoginPage" />
+        <activity
+            android:name=".guestInterfacePage"
+            android:parentActivityName=".guestLoginPage" />
+        <activity
+            android:name=".refereeLoginPage"
+            android:parentActivityName=".choosePersonPage" />
+        <activity
+            android:name=".guestLoginPage"
+            android:parentActivityName=".choosePersonPage" />
+        <activity android:name=".Main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

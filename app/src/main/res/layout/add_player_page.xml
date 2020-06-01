@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".addPlayerPage">
+
+
+    <EditText
+        android:id="@+id/addNameText"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/addName"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/addSurnameText"
+        app:layout_constraintEnd_toStartOf="@+id/addSurnameText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/addSurnameText"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="45dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/addSurname"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/addDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/addNameText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/addSex"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/addSex"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/addDate"
+        app:layout_constraintEnd_toStartOf="@+id/addDate"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/addDate"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="45dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/addDate"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/addClub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/addSex"
+        app:layout_constraintTop_toBottomOf="@+id/addSurnameText"
+        tools:ignore="MissingConstraints,TextFields" />
+
+
+    <EditText
+        android:id="@+id/addClub"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="45dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/addClub"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/addPoints"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addDate"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/addCategory"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/addCategory"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/addPoints"
+        app:layout_constraintEnd_toStartOf="@+id/addPoints"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/addPoints"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="95dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/addPoints"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/addPlayerButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/addCategory"
+        app:layout_constraintTop_toBottomOf="@+id/addClub"
+        tools:ignore="MissingConstraints,TextFields" />
+
+    <Button
+        android:id="@+id/addPlayerButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="136dp"
+        android:padding="30dp"
+        android:text="@string/addPlayerButton"
+        android:textSize="16sp"
+        android:onClick="addNewPlayer"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addPoints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

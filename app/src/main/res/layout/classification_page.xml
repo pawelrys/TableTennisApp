@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".classificationPage">
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:layout_weight="1"
+        tools:ignore="MissingConstraints">
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:isScrollContainer="true">
+
+<!--        <ScrollView-->
+<!--            android:id="@+id/scroll"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="fill_parent"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            tools:layout_editor_absoluteX="-111dp">-->
+
+<!--                    <HorizontalScrollView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content">-->
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="0dp"
+                android:background="#000000">
+
+                <TextView
+                    android:id="@+id/miejsce"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:layout_column="0"
+                    android:layout_marginTop="0dp"
+                    android:background="#FFFFFF"
+                    android:layout_margin="2px"
+                    android:gravity="center"
+                    android:text="@string/miejsce"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/imie"
+                    android:layout_width="200dp"
+                    android:layout_height="70dp"
+                    android:layout_column="1"
+                    android:background="#FFFFFF"
+                    android:layout_margin="2px"
+                    android:gravity="center"
+                    android:text="@string/addName"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/nazwisko"
+                    android:layout_width="200dp"
+                    android:layout_height="70dp"
+                    android:layout_column="2"
+                    android:background="#FFFFFF"
+                    android:layout_margin="2px"
+                    android:gravity="center"
+                    android:text="@string/addSurname"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/nr"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_column="2"
+                    android:background="#FFFFFF"
+                    android:layout_margin="2px"
+                    android:gravity="center"
+                    android:text="@string/id"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/punkty"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_column="2"
+                    android:background="#FFFFFF"
+                    android:layout_margin="2px"
+                    android:gravity="center"
+                    android:text="@string/getPoints"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+<!--            <TableRow-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:id="@+id/row"-->
+<!--                android:background="#000000">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_column="0"-->
+<!--                    android:background="#FFFFFF"-->
+<!--                    android:layout_margin="2px"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text=""-->
+<!--                    android:textAppearance="?android:attr/textAppearanceLarge" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_column="1"-->
+<!--                    android:background="#FFFFFF"-->
+<!--                    android:layout_margin="2px"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text=""-->
+<!--                    android:textAppearance="?android:attr/textAppearanceLarge" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_column="2"-->
+<!--                    android:background="#FFFFFF"-->
+<!--                    android:layout_margin="2px"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text=""-->
+<!--                    android:textAppearance="?android:attr/textAppearanceLarge" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_column="2"-->
+<!--                    android:background="#FFFFFF"-->
+<!--                    android:layout_margin="2px"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text=""-->
+<!--                    android:textAppearance="?android:attr/textAppearanceLarge" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_column="2"-->
+<!--                    android:background="#FFFFFF"-->
+<!--                    android:layout_margin="2px"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text=""-->
+<!--                    android:textAppearance="?android:attr/textAppearanceLarge" />-->
+<!--            </TableRow>-->
+<!--&lt;!&ndash;        </ScrollView>&ndash;&gt;-->
+    </TableLayout>
+
+    </LinearLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+<!--    <Button-->
+<!--        android:id="@+id/button2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="405dp"-->
+<!--        android:text="Button"-->
+<!--        android:onClick="onClick"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
