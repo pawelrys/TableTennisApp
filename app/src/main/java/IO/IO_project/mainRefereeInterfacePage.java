@@ -109,6 +109,15 @@ public class mainRefereeInterfacePage extends AppCompatActivity {
             }
         });
 
+        Button button3 = (Button)findViewById(R.id.addPlayerToTournamentButton);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mainRefereeInterfacePage.this, addPlayerToTournamentPage.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     public void ladderButton(View view) {
@@ -128,11 +137,6 @@ public class mainRefereeInterfacePage extends AppCompatActivity {
 
     public void searchPlayerButton(View view) {
         Intent intent = new Intent(this, searchPlayerPage.class);
-        startActivity(intent);
-    }
-
-    public void addPlayerToTournamentButton(View view) {
-        Intent intent = new Intent(this, addPlayerToTournamentPage.class);
         startActivity(intent);
     }
 

@@ -94,7 +94,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="80dp"
-                android:onClick="addPlayerToTournamentButton"
                 android:layout_marginTop="20dp"
                 android:padding="30dp"
                 android:layout_marginEnd="80dp"

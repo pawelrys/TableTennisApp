@@ -15,7 +15,7 @@ public class databaseAdmin extends SQLiteOpenHelper {
     private static final String Mecz_Name = "Mecze";
     private static final String Guest_Name = "Goście";
     private SQLiteDatabase db = getWritableDatabase();
-    public static final String name_database = "databaseBeta.db";
+    public static final String name_database = "databaseBeta23.db";
 
     private static databaseAdmin instance;
 
