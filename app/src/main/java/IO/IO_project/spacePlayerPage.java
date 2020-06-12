@@ -58,6 +58,7 @@ public class spacePlayerPage extends AppCompatActivity {
                 }
                 Main.setSpace_player(nr_startowy);
 
+                spacingText.setText("");
                 Main.setRandom_player(Main.getRandom_player() + liczba);
                 SharedPreferences.Editor editor = getSharedPreferences(Main.globalPreferenceName, MODE_PRIVATE).edit();
                 editor.putInt(Main.name_spacePlayer, Main.getSpace_player());

@@ -99,7 +99,9 @@ public class addPlayerToTournamentPage extends AppCompatActivity {
                         Main.addPlayer_in_tournament();
                         db.addPlayerToTournament(i);
                         Toast.makeText(getApplicationContext(), "Zawodnik został prawidłowo dodany do turnieju!", Toast.LENGTH_LONG).show();
-
+                        name.setText("");
+                        surname.setText("");
+                        date.setText("");
 
                         SharedPreferences.Editor editor = getSharedPreferences(Main.globalPreferenceName, MODE_PRIVATE).edit();
                         editor.putInt(Main.name_playerInTournament, Main.getPlayer_in_tournament());
@@ -125,6 +127,9 @@ public class addPlayerToTournamentPage extends AppCompatActivity {
                             Main.addPlayer_in_tournament();
                             db.addPlayerToTournament(i);
                             Toast.makeText(getApplicationContext(), "Zawodnik został prawidłowo dodany do turnieju!", Toast.LENGTH_LONG).show();
+                            name.setText("");
+                            surname.setText("");
+                            date.setText("");
 
                             Main.addPlayer_in_tournament();
                             SharedPreferences.Editor editor = getSharedPreferences(Main.globalPreferenceName, MODE_PRIVATE).edit();

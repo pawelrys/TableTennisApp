@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.Objects;
 
 public class Main extends AppCompatActivity {
-    public static String globalPreferenceName = "preference";
+    public static String globalPreferenceName = "preference15";
     private static int player = 0;
     private static int player_in_tournament = 0;
     private static int space_player = 0;
@@ -129,7 +129,7 @@ public class Main extends AppCompatActivity {
         Player p3 = new Player("Marcin", "Kruk3", "M", "01-01-1999", "ULKS Moszczenica", "Senior", 3);
         Player p4 = new Player("Dawid", "Kruk4", "M", "01-01-1999", "ULKS Moszczenica", "Senior", 4);
         Player p5 = new Player("Paweł", "Kruk5", "M", "01-01-1999", "ULKS Moszczenica", "Senior", 5);
-        Player p6 = new Player("Damian", "Kruk6", "M", "01-01-1999", "ULKS Moszczenica", "Senior", 6);
+        Player p6 = new Player("Adam", "Kruk", "M", "01-01-1999", "ULKS Moszczenica", "Senior", 6);
         Player p7 = new Player("Eryk", "Kruk7", "M", "01-01-1999", "ULKS Moszczenica", "Senior", 7);
         Player p8 = new Player("Jakub", "Kruk8", "M", "01-01-1999", "ULKS Moszczenica", "Senior", 8);
         Player p9 = new Player("Jarosław", "Kruk9", "M", "01-01-1999", "ULKS Moszczenica", "Senior", 9);
@@ -138,7 +138,7 @@ public class Main extends AppCompatActivity {
         Player p12 = new Player("Igor", "Kruk12", "M", "01-01-1999", "ULKS Moszczenica", "Senior", 31);
         Player p13 = new Player("Hubert", "Kruk13", "M", "01-01-1999", "ULKS Moszczenica", "Senior", 30);
         Player p14 = new Player("Arkadiusz", "Kruk14", "M", "01-01-1999", "ULKS Moszczenica", "Senior", 29);
-        Player p15 = new Player("Łukasz", "Kruk15", "M", "01-01-1999", "ULKS Moszczenica", "Senior", 28);
+        Player p15 = new Player("Maciej", "Lew", "M", "01-01-1999", "ALKS Moszczenica", "Senior", 28);
         Player p16 = new Player("Antoni", "Kruk16", "M", "01-01-1999", "ULKS Moszczenica", "Senior", 27);
         Player p17 = new Player("Jan", "Kruk17", "M", "01-01-1999", "ULKS Moszczenica", "Senior", 26);
         Player p18 = new Player("Szymon", "Kruk18", "M", "01-01-1999", "ULKS Moszczenica", "Senior", 11);
@@ -146,7 +146,7 @@ public class Main extends AppCompatActivity {
         Player p20 = new Player("Filip", "Kruk20", "M", "01-01-1999", "ULKS Moszczenica", "Senior", 13);
         Player p21 = new Player("Mikołaj", "Kruk21", "M", "01-01-1999", "ULKS Moszczenica", "Senior", 14);
         Player p22 = new Player("Mateusz", "Kruk22", "M", "01-01-1999", "ULKS Moszczenica", "Senior", 15);
-        Player p23 = new Player("Bartek", "Kruk23", "M", "01-01-1999", "ULKS Moszczenica", "Senior", 16);
+//        Player p23 = new Player("Bartek", "Kruk23", "M", "01-01-1999", "ULKS Moszczenica", "Senior", 16);
         Player p24 = new Player("Kacper", "Kruk24", "M", "01-01-1999", "ULKS Moszczenica", "Senior", 17);
         Player p25 = new Player("Stanisław", "Kruk25", "M", "01-01-1999", "ULKS Moszczenica", "Senior", 25);
         Player p26 = new Player("Piotrek", "Kruk26", "M", "01-01-1999", "ULKS Moszczenica", "Senior", 24);
@@ -154,8 +154,9 @@ public class Main extends AppCompatActivity {
         Player p28 = new Player("Marcel", "Kruk28", "M", "01-01-1999", "ULKS Moszczenica", "Senior", 22);
         Player p29 = new Player("Michał", "Kruk29", "M", "01-01-1999", "ULKS Moszczenica", "Senior", 18);
         Player p30 = new Player("Nikodem", "Kruk30", "M", "01-01-1999", "ULKS Moszczenica", "Senior", 19);
-        Player p31 = new Player("Tymon", "Kruk31", "M", "01-01-1999", "ULKS Moszczenica", "Senior", 20);
+        Player p31 = new Player("Tomasz", "Pająk", "M", "01-01-1998", "ULKS Moszczenica", "Senior", 20);
         Player p32 = new Player("Ignacy", "Kruk32", "M", "01-01-1999", "ULKS Moszczenica", "Senior", 21);
+
 
         db.addPlayer(p1);
         db.addPlayer(p2);
@@ -179,7 +180,7 @@ public class Main extends AppCompatActivity {
         db.addPlayer(p20);
         db.addPlayer(p21);
         db.addPlayer(p22);
-        db.addPlayer(p23);
+//        db.addPlayer(p23);
         db.addPlayer(p24);
         db.addPlayer(p25);
         db.addPlayer(p26);
@@ -189,7 +190,7 @@ public class Main extends AppCompatActivity {
         db.addPlayer(p30);
         db.addPlayer(p31);
         db.addPlayer(p32);
-
+//
         db.addPlayerToTournament(p1);
         db.addPlayerToTournament(p2);
         db.addPlayerToTournament(p3);
@@ -212,7 +213,7 @@ public class Main extends AppCompatActivity {
         db.addPlayerToTournament(p20);
         db.addPlayerToTournament(p21);
         db.addPlayerToTournament(p22);
-        db.addPlayerToTournament(p23);
+//        db.addPlayerToTournament(p23);
         db.addPlayerToTournament(p24);
         db.addPlayerToTournament(p25);
         db.addPlayerToTournament(p26);
@@ -223,9 +224,11 @@ public class Main extends AppCompatActivity {
         db.addPlayerToTournament(p31);
         db.addPlayerToTournament(p32);
 
-        db.addMainReferee(new MainReferee("Jacek", "Kruk", "M", "01-01-1999", "admin", "fajny", "admin"));
-        db.addCountingReferee(new CountingReferee("Tomasz", "KrukCountingReferee", "M", "01-01-1998", "ab", 4, "admin"));
+        db.addMainReferee(new MainReferee("Jacek", "Kruk", "M", "01-01-1999", "", "fajny", ""));
+        db.addCountingReferee(new CountingReferee("Tomasz", "KrukCountingReferee", "M", "01-01-1998", "ab", 4, ""));
     }
+
+
 }
 
 

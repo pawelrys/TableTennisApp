@@ -43,7 +43,7 @@ public class randomPlayerPage extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Liczba = 0", Toast.LENGTH_LONG).show();
                     return;
                 }
-
+                randomText.setText("");
                 if(Main.getRandom_player() + Main.getSpace_player() + liczba > Main.getPlayer_in_tournament()){
                     Toast.makeText(getApplicationContext(), "Nie ma tylu wolnych zawodników w turnieju!", Toast.LENGTH_LONG).show();
                     return;
@@ -65,6 +65,7 @@ public class randomPlayerPage extends AppCompatActivity {
                 SharedPreferences.Editor editor = getSharedPreferences(Main.globalPreferenceName, MODE_PRIVATE).edit();
                 editor.putInt(Main.name_randomPlayer, Main.getRandom_player());
                 editor.apply();
+                randomText.setText("");
 
 
                 if(idx != liczba) {

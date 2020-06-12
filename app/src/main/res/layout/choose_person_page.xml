@@ -14,13 +14,12 @@
 
         <Button
             android:textSize="18sp"
-            android:id="@+id/refereeButton"
+            android:id="@+id/refereeButton1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="80dp"
             android:layout_marginTop="200dp"
             android:padding="30dp"
-            android:onClick="refereeButton"
             android:layout_marginEnd="80dp"
             android:text="@string/refereeButton"
             app:layout_constraintEnd_toEndOf="parent"
@@ -35,7 +34,6 @@
             android:layout_marginStart="80dp"
             android:layout_marginTop="50dp"
             android:padding="30dp"
-            android:onClick="guestButton"
             android:layout_marginEnd="80dp"
             android:text="@string/guestButton"
             app:layout_constraintEnd_toEndOf="parent"

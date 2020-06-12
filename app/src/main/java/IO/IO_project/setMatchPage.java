@@ -30,7 +30,7 @@ public class setMatchPage extends AppCompatActivity {
         setContentView(R.layout.set_match_page);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
-        button = (Button)findViewById(R.id.enterMatchButton);
+        button = (Button)findViewById(R.id.enterMatchButton1);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -113,8 +113,9 @@ public class setMatchPage extends AppCompatActivity {
                     return;
                 }
 
-                int win = staticFunction.isMatch(res1, res2, res3, res4, res5);
 
+
+                int win = staticFunction.isMatch(res1, res2, res3, res4, res5);
 
                 db.setMatch(match.getInt(0), "Set_1", res1);
                 db.setMatch(match.getInt(0), "Set_2", res2);
@@ -130,6 +131,16 @@ public class setMatchPage extends AppCompatActivity {
                 Main.addEnd_match();
                 db.loadMatch(match.getInt(0) - 1);
                 Toast.makeText(getApplicationContext(), "Mecz dodany!", Toast.LENGTH_LONG).show();
+
+                name1.setText("");
+                name2.setText("");
+                surname1.setText("");
+                surname2.setText("");
+                set1.setText("");
+                set2.setText("");
+                set3.setText("");
+                set4.setText("");
+                set5.setText("");
 
             }
         });
